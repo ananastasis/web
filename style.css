@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #472a2a;
+}
+
+.topbar {
+    background-color: #563371;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.topbar a {
+    color: hsl(55, 68%, 81%);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+    color: #3498db;
+}
+
+main {
+    padding: 25px;
+}

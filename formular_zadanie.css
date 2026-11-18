@@ -1,0 +1,91 @@
+/* Располагаем форму и превью рядом на десктопе */
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.form-section, .preview-section {
+    flex: 1;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.field-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.field-group label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Единый вид для input, select, textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Состояние focus для полей ввода */
+input:focus, select:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-group label, .checkbox-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* Кнопка отправки */
+button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+/* Состояние hover для кнопки */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Оформление текста в блоке превью */
+#previewBox p {
+    margin: 10px 0;
+    font-size: 15px;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 8px;
+}
